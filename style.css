@@ -312,6 +312,12 @@ header ul a:hover{
     line-height: 20px;
 }
 
+#image{
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+}
+
 .card img{
     width: 80%;
     height: 50%;
@@ -713,12 +719,39 @@ header ul a:hover{
     bottom: 0;
     right: 0;
     left: 0;
-    height: 70px;
+    height: 100px;
     background-color: rgba(255, 255, 255, 0.121);
     z-index: 999;
     padding: 0 3rem;
 }
 
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.box-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+}
+
+.box-icons a p i {
+    font-size: 28px;
+    color: #fff;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.box-icons a p i:hover {
+    color: #ffffff;
+    transform: translateY(-5px);
+}
 
 /* BLUR EFFECT ANIMAION */
 
@@ -1219,4 +1252,12 @@ header ul a:hover{
     }
 
 
+}
+
+.click-icon{
+    cursor:pointer;
+    transition:.2s;
+}
+.click-icon:hover{
+    transform:scale(1.2);
 }

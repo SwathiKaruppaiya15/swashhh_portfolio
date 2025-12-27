@@ -34,3 +34,17 @@ closeIcon.addEventListener("click", function(){
     sideBar.classList.add("close-sidebar");
     
 })
+
+function go(url){
+    window.open(url, "_blank");
+}
+
+function sendEmail() {
+    const name = document.getElementById("fullName").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const mailtoLink = `mailto:thesde.swathi1215@gmail.com?subject=Message from ${name}&body=${encodeURIComponent(message + "\n\nFrom: " + name + " (" + email + ")")}`;
+
+    go(mailtoLink); 
+}

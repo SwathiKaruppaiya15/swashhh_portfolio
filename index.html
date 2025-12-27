@@ -21,20 +21,24 @@
 
             <ul>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
             </ul>
 
             <div class="box-icons">
-                <p>
-                    <img 
-                        src="https://img.icons8.com/?size=100&id=wDGo581Ea5Nf&format=png&color=000000" 
-                        alt="leetcode"
-                        style="width:26px;height:26px;object-fit:contain;cursor:pointer;">
+                <p class="click-icon" onclick="go('https://leetcode.com/thecode_1215')">
+                    <img src="https://img.icons8.com/?size=100&id=wDGo581Ea5Nf&format=png&color=000000" style="width:26px;height:26px;">
                 </p>
-                <p><i class='bx bxl-github'></i></p>
-                <p><i class='bx bxl-linkedin-square'></i></p>
+
+                <p class="click-icon" onclick="go('https://github.com/SwathiKaruppaiya15')">
+                    <i class='bx bxl-github'></i>
+                </p>
+                
+                <p class="click-icon" onclick="go('https://www.linkedin.com/in/swathi-karuppaiya-88b774319')">
+                    <i class='bx bxl-linkedin-square'></i>
+                </p>
             </div>
+
 
             <div class="menu-icon">
                 <i class='bx bx-menu'></i>
@@ -53,10 +57,12 @@
             </ul>
 
             <div class="social-sidebar">
-                <a><i class='bx bxl-youtube'></i></a>
-                <a><i class='bx bxl-github'></i></a>
-                <a><i class='bx bxl-linkedin-square'></i></a>
+                <i class='bx bxl-linkedin-square' onclick="go('https://www.linkedin.com/in/swathi-karuppaiya-88b774319')"></i>
+                <i class='bx bxl-facebook' onclick="go('https://www.facebook.com/profile.php?id=61567246696243')"></i>
+                <i class='bx bxl-instagram' onclick="go('https://www.instagram.com/me_swathi_12?igsh=MWl3YWlnMndwYXBsMg')"></i>
+                <i class='bx bxl-github' onclick="go('https://github.com/SwathiKaruppaiya15')"></i>
             </div>
+
         </div>
 
         <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
@@ -74,7 +80,10 @@
 
                 <p>I'm a full-stack developer with experience in Website, and DSA. Check out my projects and skills.</p>
 
-                <button><i class='bx bx-send' ></i> Contact Me</button>
+                <button onclick="go('mailto:thesde.swathi1215@gmail.com?subject=Portfolio Contact&body=Hi Swathi, I saw your portfolio...')">
+                    <i class='bx bx-send'></i> Contact Me
+                </button>
+
             </div>
             
             <div class="skills-video-box " >
@@ -91,7 +100,7 @@
                     <h1>Hi there, I'm Swathi,</h1>
                     <p>I'm passionate about Full-Stack Development and DSA. I have solved 1250+ problems across multiple platforms. and I love to create full stack end to end projects using MERN Stack. I enjoy adding AI features to my full-stack projects.</p>
                 
-                    <img src="images/grid1.png" alt="">
+                    <img src="images/grid1.png" id="image" alt="">
                 </div>
 
                 <div class="card">
@@ -102,12 +111,14 @@
                 </div>
 
                 <div class="card">
-                    <h1>I’m very flexible with time zone communications & locations</h1>
+                    <h1>I'm very flexible with time zone communications & locations</h1>
                     <p>I'm based in Italy, Bari and open to remote work worldwide.</p>
                 
                     <video src="videos/glob.mp4" autoplay loop muted plays-inline></video>
 
-                    <button><i class='bx bx-send'></i> Contact Me</button>
+                    <button onclick="go('mailto:thesde.swathi1215@gmail.com?subject=Portfolio Contact&body=Hi Swathi, I saw your portfolio...')">
+                        <i class='bx bx-send'></i> Contact Me
+                    </button>
                 </div>
 
                 <div class="card">
@@ -119,7 +130,7 @@
             </div>
         </section>
 
-        <section class="my-project">
+        <section class="my-project" id="project">
             <h1 class="section-title autoDisplay">My Projects 👨‍💻</h1>
             <div class="project-card">
                 <div class="project-vidbox autoBlur" >
@@ -141,7 +152,7 @@
                 </div>
                 <div class="project-info fadein-left">
                     <h1> Modern <span class="gradient">Portfolio</span> Website </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam modi voluptates assumenda omnis impedit ipsa veritatis soluta earum minima consequatur.</p>
+                    <p>This is my portfolio website for showcase my projects and skills. Using HTML, CSS, JavaScript.</p>
                     <button><i class='bx bx-link-external' ></i> Website</button>
                 </div>
             </div>
@@ -161,7 +172,7 @@
         </section>
 
         
-        <section class="skills-section">
+        <section class="skills-section" id="skill">
             <h1 class="section-title autoDisplay">
                 My Skills 💪
             </h1>
@@ -169,29 +180,37 @@
                 <img class="skills-image" src="images/digital brain (2).png" alt="">
                 <div class="Designer">
                     <h1 class="gradient">Coder <i class='bx bx-laptop'></i></h1>
-                    <p> </p>    
+                    <p>I have solved over 1250+ problems across multiple platforms (LeetCode, Codechef, Code forces, geekForgeeks, hackerRank).</p>    
                 </div>
                 
                 <div class="coder">
                     <h1 class="gradient">Designer <i class='bx bx-code-block' ></i></h1>
-                    <p>I’m skilled in HTML, CSS, JavaScript, and frameworks like React and Node.js, Express.js, Bootstrap, Tailwind. I also have experience with database management using MongoDB and MySQL.</p>
+                    <p>I'm skilled in HTML, CSS, JavaScript, and frameworks like React and Node.js, Express.js, Bootstrap, Tailwind. I also have experience with database management using MongoDB and MySQL.</p>
                 </div>
 
                 <div class="slider" reverse="true" style="
-                --width: 100px;
-                --height: 100px;
-                --quantity: 9;
+                    --width: 100px;
+                    --height: 100px;
+                    --quantity: 17;
                 ">
                     <div class="list">
-                        <div class="item" style="--position: 1"><img src="images/1.png" alt=""></div>
-                        <div class="item" style="--position: 2"><img src="images/2.png" alt=""></div>
-                        <div class="item" style="--position: 3"><img src="images/3.webp" alt=""></div>
-                        <div class="item" style="--position: 4"><img src="images/4.webp" alt=""></div>
-                        <div class="item" style="--position: 5"><img src="images/5.png" alt=""></div>
-                        <div class="item" style="--position: 6"><img src="images/6.png" alt=""></div>
-                        <div class="item" style="--position: 7"><img src="images/7.png" alt=""></div>
-                        <div class="item" style="--position: 8"><img src="images/8.png" alt=""></div>
-                        <div class="item" style="--position: 9"><img src="images/9.png" alt=""></div>
+                        <div class="item" style="--position: 1"><img src="images/1.png"></div>
+                        <div class="item" style="--position: 2"><img src="images/2.png"></div>
+                        <div class="item" style="--position: 3"><img src="images/3.webp"></div>
+                        <div class="item" style="--position: 4"><img src="images/10.png"></div>
+                        <div class="item" style="--position: 5"><img src="images/5.png"></div>
+                        <div class="item" style="--position: 6"><img src="images/6.png"></div>
+                        <div class="item" style="--position: 7"><img src="images/7.png"></div>
+                        <div class="item" style="--position: 8"><img src="images/8.png"></div>
+                        <div class="item" style="--position: 9"><img src="images/9.png"></div>
+                        <div class="item" style="--position: 10"><img src="images/11.png"></div>
+                        <div class="item" style="--position: 11"><img src="images/12.png"></div>
+                        <div class="item" style="--position: 12"><img src="images/13.png"></div>
+                        <div class="item" style="--position: 13"><img src="images/14.png"></div>
+                        <div class="item" style="--position: 14"><img src="images/15.png"></div>
+                        <div class="item" style="--position: 15"><img src="images/16.png"></div>
+                        <div class="item" style="--position: 16"><img src="images/17.jpg"></div>
+                        <div class="item" style="--position: 17"><img src="images/18.jpg"></div>
                     </div>
                 </div>
             </div>
@@ -201,13 +220,13 @@
             <h1 class="section-title autoDisplay">Let's talk😊</h1>
 
             <div class="social-box autoBlur">
-                <a href="#"><i class='bx bxs-phone'></i> +39 111 222 444</a>
-                <a href="#"><i class='bx bxl-telegram' ></i> Contact Example.com</a>
-                <a href="#"><i class='bx bxl-linkedin-square' ></i> Contact Example.com</a>
+                <a href="#" onclick="go('tel:+919791390497')"><i class='bx bxs-phone'></i> +91 97913 90497</a>
+                <a href="#" onclick="go('mailto:thesde.swathi1215@gmail.com')"><i class='bx bxl-gmail'></i> thesde.swathi1215@gmail.com</a>
+                <a href="#" onclick="go('https://github.com/SwathiKaruppaiya15')"><i class='bx bxl-github'></i> Contact SwathiKaruppaiya15</a>
                 <div class="social-icons">
-                    <a href="#"><i class='bx bxl-youtube' ></i></a>
-                    <a href="#"><i class='bx bxl-twitter' ></i></a>
-                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#" onclick="go('https://www.instagram.com/me_swathi_12')"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" onclick="go('https://www.linkedin.com/in/swathi-karuppaiya-88b774319')"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" onclick="go('https://www.facebook.com/profile.php?id=61567246696243')"><i class='bx bxl-facebook-circle'></i></a>
                 </div>
             </div>
 
@@ -215,13 +234,13 @@
                 <p>Wheter you're looking to build a new website, improve your existing platform, or bring a unique project to file. i'm here to help.</p>
             
                 <p>Full Name</p>
-                <input placeholder="Your Full name" type="full name">
+                <input id="fullName" placeholder="Your Full name" type="full name">
 
                 <p>Email Address</p>
-                <input placeholder="Your Email" type="Contact">
+                <input id="email" placeholder="Your Email" type="Contact" >
 
                 <p>Your Message</p>
-                <input  class="input-message" type="contact" placeholder="shaire your thoughts...">
+                <input  id="message" class="input-message" type="contact" placeholder="shaire your thoughts..." >
 
                 <button>Send Message <i class='bx bx-mail-send'></i></button>
             </div>
@@ -229,15 +248,27 @@
         </section> 
 
         <section class="footer">
-            <h1>©️2025, Made with ❤️ by MiladiCode</h1>
-            <div class="box-icons">
-                <p><i class='bx bxl-youtube'></i></p>
-                <p><i class='bx bxl-github'></i></p>
-                <p><i class='bx bxl-linkedin-square'></i></p>
+            <div class="footer-content">
+                <p>© 2025 Swathi Karuppaiya. All rights reserved.</p>
+                <div class="box-icons">
+                    <a href="#" onclick="go('mailto:thesde.swathi1215@gmail.com')">
+                        <p><i class='bx bxl-gmail'></i></p>
+                    </a>
+                    <a href="#" onclick="go('https://github.com/SwathiKaruppaiya15')">
+                        <p><i class='bx bxl-github'></i></p>
+                    </a>
+                    <a href="#" onclick="go('https://www.linkedin.com/in/swathi-karuppaiya-88b774319')">
+                        <p><i class='bx bxl-linkedin-square'></i></p>
+                    </a>
+                    <a href="#" onclick="go('https://www.instagram.com/me_swathi_12')">
+                        <p><i class='bx bxl-instagram'></i></p>
+                    </a>
+                    <a href="#" onclick="go('https://www.facebook.com/profile.php?id=61567246696243')">
+                        <p><i class='bx bxl-facebook-circle'></i></p>
+                    </a>
+                </div>
             </div>
         </section>
-
-        
     </div>
     <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
