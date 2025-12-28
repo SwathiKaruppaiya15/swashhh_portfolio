@@ -51,9 +51,9 @@
             
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
             </ul>
 
             <div class="social-sidebar">
@@ -93,7 +93,7 @@
             <div class="scroll-down"></div>
         </section>
 
-        <section class="info-section">
+        <section class="info-section" id="about">
             <h1 class="section-title autoDisplay">Hello,There👋</h1>
             <div class="info-cards">
                 <div class="card ">
@@ -231,18 +231,20 @@
             </div>
 
             <div class="contact-box autoBlur">
-                <p>Wheter you're looking to build a new website, improve your existing platform, or bring a unique project to file. i'm here to help.</p>
-            
-                <p>Full Name</p>
-                <input id="fullName" placeholder="Your Full name" type="full name">
+                <p>Whether you're looking to build a new website or improve your platform — I'm here to help.</p>
 
-                <p>Email Address</p>
-                <input id="email" placeholder="Your Email" type="Contact" >
+                <form onsubmit="sendEmail(); return false;">
+                    <p>Full Name</p>
+                    <input id="fullName" type="text" placeholder="Your Full Name" required>
 
-                <p>Your Message</p>
-                <input  id="message" class="input-message" type="contact" placeholder="shaire your thoughts..." >
+                    <p>Email Address</p>
+                    <input id="email" type="email" placeholder="Your Email" required>
 
-                <button>Send Message <i class='bx bx-mail-send'></i></button>
+                    <p>Your Message</p>
+                    <textarea id="message" placeholder="Share your thoughts..." required></textarea>
+                    <br>
+                    <button type="submit">Send Message <i class='bx bx-mail-send'></i></button>
+                </form>
             </div>
         
         </section> 
@@ -271,6 +273,29 @@
         </section>
     </div>
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("QMPA0fdOWjhiut1M7");
+        })();
+
+        function sendEmail(){
+            emailjs.send("service_zql99sl", "template_m4ubf7j", {
+                name: document.getElementById("fullName").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value,
+                time: new Date().toLocaleString() 
+            })
+            .then(() => {
+                alert("✔ Message Sent Successfully!");
+                document.querySelector("form").reset();
+            })
+            .catch(err => {
+                alert("❌ Failed to send message.");
+                console.error(err);
+            });
+        }
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script >
       AOS.init();

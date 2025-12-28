@@ -310,6 +310,7 @@ header ul a:hover{
     color: gray;
     font-size: 13px;
     line-height: 20px;
+    margin-top: 10px;
 }
 
 #image{
@@ -1204,8 +1205,12 @@ header ul a:hover{
     }
 
     .card h1{
-        bottom: 30%;
+        margin-top: 45px;
+        bottom: 50%;
         font-size: 5px;
+    }
+    .card p{
+        margin: 20px;
     }
 
     .project-card {
